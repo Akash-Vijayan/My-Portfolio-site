@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en" class="bg-[#FDFBF7] text-neutral-900 antialiased selection:bg-burgundy-900 selection:text-white transition-colors duration-500">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash V | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              signature: ['"Mrs Saint Delafield"', 'cursive'],
+            },
+            colors: {
+              // Luxurious Sandalwood Palette
+              sandal: {
+                50: '#FDFBF7', // Cream Base
+                100: '#F7F3E8',
+                200: '#EBE2D0',
+                300: '#D6C8B0',
+                400: '#B0A080',
+                500: '#8C7E60',
+                900: '#3D362B', // Dark Earth
+              },
+              // Premium Burgundy/Wine Palette
+              burgundy: {
+                500: '#9E2A2B', 
+                600: '#800020', // Classic Deep Burgundy
+                700: '#5E0017',
+                800: '#4A0404',
+                900: '#3B000F', // Blackened Wine
+              }
+            },
+            backgroundImage: {
+              'grain': "url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22 opacity=%220.05%22/%3E%3C/svg%3E')",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        /* Premium Custom Cursor - Default (Small Dark Dot) */
+        cursor: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4' fill='%233D362B'/%3E%3C/svg%3E") 5 5, auto;
+      }
+      
+      /* Dark mode cursor override handled via CSS filter if needed, or kept dark for contrast on dark bg */
+      html.dark body {
+         cursor: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='4' fill='%23EBE2D0'/%3E%3C/svg%3E") 5 5, auto;
+      }
+
+      /* Premium Custom Cursor - Pointer (Burgundy Ring) */
+      a, button, [role="button"], input, select, textarea, .cursor-pointer {
+        cursor: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' stroke='%23800020' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") 10 10, pointer;
+      }
+      
+      html.dark a, html.dark button, html.dark [role="button"], html.dark input, html.dark select, html.dark textarea, html.dark .cursor-pointer {
+        cursor: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='8' stroke='%23D6C8B0' stroke-width='1.5' fill='none'/%3E%3C/svg%3E") 10 10, pointer;
+      }
+      
+      /* Global Noise Texture */
+      .bg-noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 50;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+      }
+
+      /* Hide scrollbar */
+      ::-webkit-scrollbar { display: none; }
+      html { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      .text-balance { text-wrap: balance; }
+      
+      /* Smooth marquee animation */
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        animation: marquee 30s linear infinite;
+      }
+      
+      /* Global Transition for Dark Mode */
+      *, *::before, *::after {
+        transition-property: background-color, border-color, color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^18.2.0/",
+    "react": "https://esm.sh/react@^18.2.0",
+    "react/": "https://esm.sh/react@^18.2.0/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.292.0",
+    "gsap": "https://esm.sh/gsap@^3.12.2",
+    "gsap/": "https://esm.sh/gsap@^3.12.2/",
+    "three": "https://esm.sh/three@0.160.0",
+    "three/": "https://esm.sh/three@0.160.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
