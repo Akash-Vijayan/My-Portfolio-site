@@ -19,7 +19,7 @@ export const About: React.FC = () => {
               {/* 2. Main Image */}
               <div className="relative z-10 w-full aspect-[3/4] bg-neutral-200 dark:bg-neutral-800 shadow-2xl overflow-hidden border-4 border-white dark:border-neutral-900">
                  <img 
-                   src="../asserts/images/About.JPG" 
+                   src="about.jpg" 
                    alt="Portrait of Akash"
                    className="w-full h-full object-cover grayscale contrast-110 hover:grayscale-0 transition-all duration-1000 transform hover:scale-105"
                  />
