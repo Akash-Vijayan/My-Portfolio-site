@@ -9,46 +9,6 @@ const projects = [
     scope: "Full Stack Development",
     img: "Projects/Web01.png",
     link: "https://home-baking.vercel.app"
-  },
-  {
-    title: "Apex Financial",
-    category: "SaaS Dashboard",
-    year: "2023",
-    scope: "Frontend Architecture",
-    img: "https://picsum.photos/1200/800?random=2",
-    link: "https://example.com"
-  },
-  {
-    title: "Mono E-Commerce",
-    category: "Headless Shopify",
-    year: "2023",
-    scope: "Full Stack",
-    img: "https://picsum.photos/1200/800?random=3",
-    link: "https://example.com"
-  },
-  {
-    title: "Urban Architecture",
-    category: "Brand Identity",
-    year: "2022",
-    scope: "Interaction Design",
-    img: "https://picsum.photos/1200/800?random=4",
-    link: "https://example.com"
-  },
-  {
-    title: "Nebula Stream",
-    category: "Video Platform",
-    year: "2022",
-    scope: "UI Engineering",
-    img: "https://picsum.photos/1200/800?random=5",
-    link: "https://example.com"
-  },
-  {
-    title: "Velvet Estates",
-    category: "Real Estate",
-    year: "2021",
-    scope: "Frontend Dev",
-    img: "https://picsum.photos/1200/800?random=6",
-    link: "https://example.com"
   }
 ];
 
