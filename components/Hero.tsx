@@ -130,7 +130,7 @@ export const Hero: React.FC = () => {
                    {/* 2. The Main Image (Monolith) */}
                    <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-10 shadow-2xl transition-transform duration-700 hover:-translate-y-2 hover:-translate-x-2 bg-neutral-200 dark:bg-neutral-800">
                         <img 
-                          src="../public/images/Profile.jpeg" 
+                          src="images/Profile.jpeg" 
                           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-110 hover:scale-100"
                           alt="Akash V"
                         />
