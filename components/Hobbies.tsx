@@ -12,7 +12,7 @@ const hobbies = [
     bg: "bg-neutral-900",
     text: "text-sandal-50",
     border: "border-neutral-800",
-    image: "https://images.unsplash.com/photo-1555597673-b21d5c935865?q=80&w=600&auto=format&fit=crop"
+    image: "/public/Hobbies/Image1.jpeg"
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const hobbies = [
     bg: "bg-burgundy-900",
     text: "text-sandal-50",
     border: "border-burgundy-800",
-    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=600&auto=format&fit=crop"
+    image: "/public/Hobbi/Image2.jpeg"
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const hobbies = [
     bg: "bg-sandal-100",
     text: "text-burgundy-900",
     border: "border-sandal-200",
-    image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=600&auto=format&fit=crop"
+    image: "/public/Hobbies/Image3.jpg"
   }
 ];
 
