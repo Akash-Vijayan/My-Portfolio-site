@@ -4,33 +4,43 @@ import { Code2, Sparkles, Database, Palette, Terminal, Cpu, Layers, GitBranch } 
 
 const skillCategories = [
   {
-    id: "01",
-    title: "Frontend Architecture",
-    description: "Building robust, type-safe applications that scale. Prioritizing clean component patterns.",
-    icon: <Code2 className="w-6 h-6" />,
-    tags: ["React.js", "Next.js 14", "TypeScript", "Redux Toolkit", "TanStack Query", "Tailwind CSS"]
-  },
+  id: "01",
+  title: "Frontend Engineering",
+  description: "Building responsive, scalable interfaces with clean component structure and modern UI practices.",
+  icon: <Code2 className="w-6 h-6" />,
+  tags: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Responsive Design"]
+},
   {
-    id: "02",
-    title: "Creative Interaction",
-    description: "Bridging the gap between design and dev with fluid animations and immersive 3D.",
-    icon: <Sparkles className="w-6 h-6" />,
-    tags: ["Three.js", "R3F", "GSAP", "WebGL", "Framer Motion", "GLSL Shaders"]
-  },
+  id: "02",
+  title: "Backend & Database",
+  description: "Developing APIs and managing structured data to support reliable, production-ready applications.",
+  icon: <Database className="w-6 h-6" />,
+  tags: ["Node.js", "Express.js", "MongoDB", "REST APIs"]
+},
   {
-    id: "03",
-    title: "Backend & Infrastructure",
-    description: "Structuring data and deploying infrastructure to support seamless user experiences.",
-    icon: <Database className="w-6 h-6" />,
-    tags: ["Node.js", "PostgreSQL", "Prisma", "Docker", "AWS", "CI/CD"]
-  },
+  id: "03",
+  title: "Creative Design",
+  description: "Designing clean visual systems, social creatives, and branding assets with clarity and impact.",
+  icon: <Palette className="w-6 h-6" />,
+  tags: ["Canva", "Affinity Designer", "UI Design", "Branding"]
+},
   {
-    id: "04",
-    title: "Design & Strategy",
-    description: "Translating brand values into cohesive visual systems and intuitive interfaces.",
-    icon: <Palette className="w-6 h-6" />,
-    tags: ["Figma", "UI Engineering", "Design Systems", "Prototyping", "Adobe Suite"]
-  }
+  id: "04",
+  title: "AI & Development Tools",
+  description: "Integrating AI-powered tools into development, automation, and creative workflows to enhance productivity and output quality.",
+  icon: <Sparkles className="w-6 h-6" />,
+  tags: [
+    "ChatGPT",
+    "GitHub Copilot",
+    "Gemini",
+    "Claude",
+    "Perplexity",
+    "DALL·E",
+    "Canva AI",
+    "ElevenLabs",
+    "etc."
+  ]
+}
 ];
 
 export const Skills: React.FC = () => {
