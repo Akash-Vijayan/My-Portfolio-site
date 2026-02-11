@@ -9,7 +9,7 @@ const certs = [
     year: "Dec 2025 – Present",
     id: "MATT-FE-2025",
     link: "#",
-    image: "../asserts/certificate/MATT.png" 
+    image: "/certificate/MATT.png" 
   },
   { 
     name: "MERN Stack Masterclass", 
@@ -17,7 +17,7 @@ const certs = [
     year: "Oct 26, 2025",
     id: "ROBO-MERN-2025",
     link: "#",
-    image: "../asserts/certificate/Robolearn.png"
+    image: "/certificate/Robolearn.png"
   },
   { 
     name: "OCI 2025 – AI Foundations Associate", 
@@ -25,7 +25,7 @@ const certs = [
     year: "Aug 2025",
     id: "ORACLE-AI-2025",
     link: "#",
-    image: "../asserts/certificate/OracleCert.png"
+    image: "/certificate/OracleCert.png"
   },
   { 
     name: "Full Stack Development Internship", 
@@ -33,7 +33,7 @@ const certs = [
     year: "July – Aug 2025",
     id: "NOV-2025-FSD",
     link: "#",
-    image: "../asserts/certificate/FSD Internship Cert.jpg"
+    image: "/certificate/FSD Internship Cert.jpg"
   },
 ];
 
